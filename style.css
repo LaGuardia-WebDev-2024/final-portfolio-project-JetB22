@@ -3,20 +3,20 @@
 body {
   padding-top: 30px;
   margin-left: 0px;
+  font-family: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
 }
 /* ⬆⬆⬆⬆ Nav Bar Styling 
 ~~~~~ Taken From: 
 https://www.w3schools.com/css/css_navbar_horizontal.asp */
 ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #333333;
-  position: fixed;
   top: 0;
-  width: 100%;
+  width: 80%;
   z-index: 999;
+  border-radius: 15px;
 }
 
 li {
@@ -25,20 +25,16 @@ li {
 
 li a {
   display: block;
-  color: white;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  background-color: rgba(77, 0, 100, 0.5);
 }
 
 li a:hover:not(.active) {
-  background-color: orange;
+  background-color: rgba(128, 0, 128, 0.75);
 }
 
 .active {
-  background-color: red;
+  background-color: rgba(0, 128, 0, 0.);
 }
 
-h1 {
-  width: 100%;
-}
