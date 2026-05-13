@@ -10,24 +10,30 @@ body {
 https://www.w3schools.com/css/css_navbar_horizontal.asp */
 ul {
   list-style-type: none;
-  margin: auto;
-  padding: 0;
   overflow: hidden;
   top: 0;
-  width: 80%;
+  width: fit-content;
   z-index: 999;
   border-radius: 15px;
+  margin: auto;
+  font-size: 12px;
+  background-color: rgba(77, 0, 100, 0.65);
+  padding-right: 30px;
 }
 
-li {
-  float: left;
+li{
+  display: inline-block;
+  padding: 2px;
+  margin-right: 5px;
 }
+
 
 li a {
   display: block;
   text-align: center;
-  padding: 14px 16px;
-  background-color: rgba(77, 0, 100, 0.5);
+  padding: 5px 10px;
+  color: rgb(102, 255, 102);
+  border-radius: 15px;
 }
 
 li a:hover:not(.active) {
@@ -35,6 +41,6 @@ li a:hover:not(.active) {
 }
 
 .active {
-  background-color: rgba(0, 128, 0, 0.);
+  background-color: rgba(0, 128, 0, 0.75);
 }
 
