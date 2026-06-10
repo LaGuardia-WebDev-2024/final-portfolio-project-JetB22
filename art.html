@@ -2,24 +2,68 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Project - Art</title>
+    <title>Fart</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
 
-      body{
-        background-image: url(Art\ Backround.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
+  body{
+  background-image: url("Art Backround.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: auto;
+}
 
-     
+  .Cat:hover {
+    transform: rotate(-450deg);
+  }
+
+  img {
+  width: 600px;
+  border-radius: 3px;
+  border-style: groove;
+  background-color: white;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.2) rotate(360deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+div {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 100px;
+  column-gap: 200px;
+  background-color: rgb(187, 187, 187,.6);
+  padding: 50px;
+  padding-top: 100px;
+  justify-content: center;
+  width: 80%;
+  margin: 50px auto;
+  border-style: groove;
+  border-radius: 3px;
+}
+
+ h1{
+  background-color: rgba(137, 43, 226, 0.5);
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  color: aquamarine;
+  border-radius: 50px;
+}
 
 
 
     </style>
   </head>
   <body>
+    
+    <h1>My Art</h1>
+    
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -27,16 +71,24 @@
       <li><a class="active" href="art.html">Arts and Crafts Showcase</a></li>
       <li><a href="resume.html">My Websites</a></li>
     </ul>
+    <br>
+    <br>
     <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
-    <h1>My Art</h1>
+    
 
-    <img src="IMG_1361" alt="WOA">
-    <img src="IMG_1362.jpg">
-    <img src="IMG_1363.jpg">
-    <img src="IMG_1364.jpg">
-    <img src="IMG_1365.jpg">
-    <img src="IMG_1366.jpg">
-
+    <div>
+    <img src="IMG_1361.png">
+    <img src="IMG_1364.png">
+    <img class="Cat" src="IMG_1363.png">
+    <img src="IMG_1369 (1).png">
+    <img src="IMG_1365.png">
+    <img src="IMG_1366.png">
+    <img src="IMG_1372.png">
+    <img src="IMG_1362.png">
+    <img class="Cat" src="IMG_1370.png">
+    <img src="IMG_1371.png">
+    <img src="IMG_1367.png">
+    </div>
   
   
   </body>

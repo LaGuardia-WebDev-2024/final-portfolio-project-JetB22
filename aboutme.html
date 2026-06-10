@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Final Project - About Me</title>
+    <title>Jet Budd About ME!</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <style>
       /* Styling Only Related To THIS Page */
@@ -38,6 +38,46 @@
         border-radius: 150px;
       }
 
+      img {
+  --s: 14px;  /* control the size of the wave */
+  
+  width: calc(4*5*var(--s));
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: var(--s);
+  border: var(--s) solid #0000;
+  background: rgba(137, 43, 226, 0.8);
+  border-radius: calc(3.5*var(--s)); 
+  mask: 
+    radial-gradient(calc(sqrt(2)*var(--s)),#000 calc(100% - 1px),#0000),
+    conic-gradient(#000 0 0) content-box,
+    radial-gradient(calc(sqrt(2)*var(--s)),#0000 100%,#000 calc(100% + 1px)) 
+     var(--s) var(--s) padding-box;
+  mask-size: calc(var(--s)*4) calc(var(--s)*4);
+}
+img:nth-of-type(1) {
+  translate: var(--s) var(--s);
+}
+img:nth-of-type(2) {
+  translate: 0 calc(-1*var(--s));
+  width: calc(4*4*var(--s));
+  height: calc(3*4*var(--s));
+}
+img:nth-of-type(3) {
+  translate: calc(-1*var(--s)) var(--s);
+}
+img:nth-of-type(4) {
+  translate: calc(4*var(--s))1;
+}
+img:nth-of-type(5) {
+  translate: 0 calc(-2*var(--s));
+  margin: auto;
+  height: calc(4*4*var(--s));
+}
+img:nth-of-type(6) {
+  translate: calc(-6*var(--s)) 5;
+}
+
     </style>
   </head>
   <body>
@@ -57,6 +97,13 @@
       music, movies, cooking, baking, tv shows, video games the list goes on for too lonnnnnnnggggggggggggggggggggggg
       as did that long. This website is a collection of all my little projects and crap so be ready...
     </p>
+<br><br>
+    <img src="Based ahh (1).jpg">
+    <img src="Cooked (1).jpg">
+    <img src="Jebus (1).jpg">
+    <img src="Untitled285_20260227222637.png">
+    <img src="Opera Sleep (1).jpg">
+    <img src="Picnic (1).jpg">
 
   </body>
 </html>
