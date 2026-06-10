@@ -16,9 +16,15 @@ Select ONE Additional Feature to Add
 <!DOCTYPE html>
 <html>
   <head>
+
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+
     <title>Crazy Days and Fun Time</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/processing.js/1.6.6/processing.min.js"></script>
+    
     <style>
       /* Styling Only Related To THIS Page */
       /*~~~~~ Taken From:
@@ -71,11 +77,16 @@ Select ONE Additional Feature to Add
          padding: 10px;
          color:aquamarine;
       }
+
+      #myCanvas {
+        border-style: groove;
+        border-width: 3px;
+      }
     </style>
   </head>
   <body>
 
-    <h1>Ms Hall Appreciation Page</h1>
+    <h1>Home Page</h1>
 
     <!-- ⬆⬆⬆⬆ Nav Bar -->
     <ul>
@@ -93,5 +104,8 @@ Select ONE Additional Feature to Add
       made and done in the past <br><br> BUT before we get into it i just want to
       SHOUT OUT MS HALL WOOOO!!! FOR BEING SO AWESOME AND THE BEST TEACHER EVER
     </p>
+    <br>
+    <canvas id="myCanvas" data-processing-sources="myP5Code.pde"> </canvas>
+
   </body>
 </html>
